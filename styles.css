@@ -1,6 +1,27 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 .grid-container {
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 100vw;
+    height: 100vh;
 }
 .grid-item {
     border: solid 2px black;
+}
+
+.settings {
+    grid-row: 1 / 6;
+}
+.profile {
+    grid-column: 2 / 6;
+}
+.content {
+    grid-row: 2 / 6;
+    grid-column: 2 / 6;
 }
