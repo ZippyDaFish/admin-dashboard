@@ -1,0 +1,6 @@
+.grid-container {
+    display: grid;
+}
+.grid-item {
+    border: solid 2px black;
+}
