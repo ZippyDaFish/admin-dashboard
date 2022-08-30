@@ -2,8 +2,8 @@
 
 :root {
     --main-color: rgb(0, 144, 180);
-    --secondary-color: rgb(77, 77, 77);
-    --teriary-color: rgb(102, 102, 102);
+    --secondary-color: rgb(226, 226, 226);
+    --teriary-color: rgb(214, 213, 213);
 }
 * {
     box-sizing: border-box;
@@ -13,11 +13,15 @@
 .pad-left {
     padding-left: 10%;
 }
+.pad-top {
+    padding-top: 10%;
+}
 
 .text-white {
     color: white;
     font-size: 20px;
-    font-family: "Roboto";
+    font-weight: bold;
+    font-family: "Roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .grid-container {
@@ -35,15 +39,15 @@
     background-color: var(--main-color);
     grid-row: 1 / 6;
     display: grid;
-    grid-template-rows: repeat(11, 5vh);
-    row-gap: 2vh;
+    grid-template-rows: repeat(12, 5vh);
+    row-gap: 1vh;
 }
 .profile {
-    background-color: var(--secondary-color);
+    background-color: var(--tiertiary-color);
     grid-column: 2 / 6;
 }
 .content {
-    background-color: var(--teriary-color);
+    background-color: var(--secondary-color);
     grid-row: 2 / 6;
     grid-column: 2 / 6;
 }
