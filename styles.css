@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-    --main-color: rgb(0, 144, 180);
+    --main-color: rgb(0, 181, 226);
     --secondary-color: rgb(226, 226, 226);
     --teriary-color: rgb(214, 213, 213);
 }
@@ -11,14 +11,20 @@
     margin: 0;
 }
 .pad-left {
-    padding-left: 10%;
+    padding-left: 2vw;
 }
 .pad-top {
-    padding-top: 10%;
+    padding-top: 2vh;
 }
 
 .text-white {
     color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.text-black {
+    color: black;
     font-size: 20px;
     font-weight: bold;
     font-family: "Roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -45,7 +51,15 @@
 .profile {
     background-color: var(--tiertiary-color);
     grid-column: 2 / 6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
 }
+.search, .profile-head {
+    grid-column: 1 / 3;
+}
+
 .content {
     background-color: var(--secondary-color);
     grid-row: 2 / 6;
