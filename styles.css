@@ -1,7 +1,20 @@
+:root {
+    --main-color: rgb(0, 144, 180);
+    --secondary-color: rgb(77, 77, 77);
+    --teriary-color: rgb(102, 102, 102);
+}
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+.pad-left {
+    padding-left: 10%;
+}
+
+.text-white {
+    color: white;
+    font-size: 20px;
 }
 
 .grid-container {
@@ -15,13 +28,18 @@
     border: solid 2px black;
 }
 
-.settings {
+.dashboard {
+    background-color: var(--main-color);
     grid-row: 1 / 6;
+    display: grid;
+    grid-template-rows: repeat(10, 5vh);
 }
 .profile {
+    background-color: var(--secondary-color);
     grid-column: 2 / 6;
 }
 .content {
+    background-color: var(--teriary-color);
     grid-row: 2 / 6;
     grid-column: 2 / 6;
 }
