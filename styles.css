@@ -29,6 +29,9 @@
     font-weight: bold;
     font-family: "Roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.inline-img {
+    padding-right: 0.5vw;
+}
 
 .grid-container {
     display: grid;
