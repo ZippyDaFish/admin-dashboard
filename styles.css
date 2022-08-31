@@ -30,7 +30,7 @@
     font-family: "Roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .inline-img {
-    padding-right: 0.5vw;
+    padding-right: 1vw;
 }
 
 .grid-container {
@@ -51,6 +51,10 @@
     grid-template-rows: repeat(12, 5vh);
     row-gap: 1vh;
 }
+.dashboard > div {
+    display: flex;
+    align-items: center;
+}
 .profile {
     background-color: var(--tiertiary-color);
     grid-column: 2 / 6;
@@ -69,6 +73,11 @@
     width: 75%;
     border-radius: 30px;
     text-indent: 15px !important;
+}
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 .profile-btns {
     display: flex;
