@@ -2,8 +2,8 @@
 
 :root {
     --main-color: rgb(0, 181, 226);
-    --secondary-color: rgb(226, 226, 226);
-    --teriary-color: rgb(214, 213, 213);
+    --secondary-color: rgb(212, 212, 212);
+    --tertiary-color: rgb(247, 247, 247);
     --profile-color: rgb(255, 237, 74);
 }
 * {
@@ -50,6 +50,9 @@
     width: 100vw;
     height: 100vh;
 }
+.grid-item {
+    border: solid 1px red;
+}
 
 .dashboard {
     background-color: var(--main-color);
@@ -63,7 +66,7 @@
     align-items: center;
 }
 .profile {
-    background-color: var(--tiertiary-color);
+    background-color: var(--tertiary-color);
     grid-column: 2 / 6;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -76,7 +79,7 @@
     align-items: center;
 }
 .search {
-    background-color: var(--teriary-color);
+    background-color: var(--tertiary-color);
     border: none;
     height: 30px;
     width: 75%;
@@ -108,4 +111,27 @@
     background-color: var(--secondary-color);
     grid-row: 2 / 6;
     grid-column: 2 / 6;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 5% 45% 5% 45%;
+
+}
+.projects {
+    grid-row: 2 / 5;
+    display: grid;
+    padding-bottom: 30px;
+    gap: 25px 50px;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(3, 1fr);
+}
+.project-tab {
+    background-color: var(--tertiary-color);
+    border-radius: 15px;
+    padding: 20px;
+}
+.announcements {
+    grid-row: 2 / 3;
+}
+.trending {
+    grid-row: 4 / 5;
 }
