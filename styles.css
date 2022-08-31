@@ -2,7 +2,7 @@
 
 :root {
     --main-color: rgb(0, 181, 226);
-    --secondary-color: rgb(180, 212, 214);
+    --secondary-color: rgb(194, 206, 207);
     --tertiary-color: rgb(255, 255, 255);
     --profile-color: rgb(255, 237, 74);
 }
@@ -124,6 +124,7 @@
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: 5% 45% 5% 45%;
+    box-shadow: inset 0px 0px 10px 2px rgba(0,0,0,0.5);
 
 }
 .projects {
@@ -138,6 +139,8 @@
     background-color: var(--tertiary-color);
     border-radius: 15px;
     padding: 20px;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.4);
+    border-left: solid 7px var(--profile-color);
 }
 .announcements, .trending {
     background-color: var(--tertiary-color);
@@ -145,6 +148,8 @@
     width: 60%;
     margin-bottom: 30px;
     padding: 20px;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.4);
+    border-left: solid 7px var(--profile-color);
 }
 .announcements {
     grid-row: 2 / 3;
