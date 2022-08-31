@@ -2,8 +2,8 @@
 
 :root {
     --main-color: rgb(0, 181, 226);
-    --secondary-color: rgb(212, 212, 212);
-    --tertiary-color: rgb(247, 247, 247);
+    --secondary-color: rgb(180, 212, 214);
+    --tertiary-color: rgb(255, 255, 255);
     --profile-color: rgb(255, 237, 74);
 }
 * {
@@ -28,6 +28,11 @@
     color: black;
     font-size: 20px;
     font-weight: bold;
+    font-family: "Roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.text-pale {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
     font-family: "Roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .inline-img {
@@ -79,7 +84,7 @@
     align-items: center;
 }
 .search {
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     border: none;
     height: 30px;
     width: 75%;
@@ -131,7 +136,15 @@
 }
 .announcements {
     grid-row: 2 / 3;
+    background-color: var(--tertiary-color);
+    border-radius: 15px;
+    width: 80%;
+    margin-bottom: 30px;
 }
 .trending {
     grid-row: 4 / 5;
+    background-color: var(--tertiary-color);
+    border-radius: 15px;
+    width: 80%;
+    margin-bottom: 30px;
 }
